@@ -6,9 +6,7 @@ def pof(debugger, command, result, internal_dict):
 	usage = "usage: %prog <instance|class>"
 	'''Prints the class hirarchy for a given className or instance via memeory address. (Ex. 'ch NSString|<memory_address_to_an_NSString>' will output 'NSString > NSObject')
 	'''
-	print >>result, internal_dict
-	return
-	
+		
 	ci = debugger.GetCommandInterpreter()
 	ro = lldb.SBCommandReturnObject()
 
